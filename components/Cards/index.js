@@ -47,10 +47,13 @@ function createCard(object) {
 
 
     axios.get('https://lambda-times-backend.herokuapp.com/articles').then(response => {
-    var articlesArr =  Object.entries(response.data.articles);
+        
+    var articlesArr =  Object.values(response.data.articles);
             articlesArr.forEach(item => {
-                document.querySelector('.cards-container').append(createCard(item));
-                console.log(item);
+                item.forEach(article => {
+                    document.querySelector('.cards-container').append(createCard(article));
+                // console.log(item);
+                })
              })
     })
 .catch(error => {

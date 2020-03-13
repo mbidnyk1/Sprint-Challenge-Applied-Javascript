@@ -29,8 +29,12 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+    
+    Its an html interface that that allows us to manipulate the a document in different ways.
 
 2. What is an event?
+
+    When a user interacts with a page events are triggered, clicking for example is an event and we can react and record these events in in a document.
 
 3. What is an event listener?
 
